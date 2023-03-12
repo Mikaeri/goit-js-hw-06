@@ -27,12 +27,15 @@ button {
 .gallery{
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .task-3-item {
-width: 360px;
-height: 360px;
-
+width: 150px;
+height: 150px;
 list-style: none;
 padding: 0;
 margin-bottom: 15px;
