@@ -1,15 +1,20 @@
 let counterValue = 0;
 
-const decrement = document.querySelector('[data-action="decrement"]');
-const increment = document.querySelector('[data-action="increment"]');
+const decrementBtn = document.querySelector('[data-action="decrement"]');
+const incrementBtn = document.querySelector('[data-action="increment"]');
 const initialValue = document.querySelector("#value");
 
-decrement.addEventListener("click", () => {
+decrementBtn.addEventListener("click", () => {
   counterValue -= 1;
   initialValue.textContent = counterValue;
 });
 
-increment.addEventListener("click", () => {
+incrementBtn.addEventListener("click", () => {
   counterValue += 1;
   initialValue.textContent = counterValue;
 });
+
+// Ще замість:
+// const initialValue = document.querySelector("#value");
+// Можна зробити пошук виключно за ID:
+// const initialValue = document.getElementByID("value");
